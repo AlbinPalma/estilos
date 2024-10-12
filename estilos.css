@@ -1,8 +1,31 @@
-.fondo{
-    background-color: red;
+body{
+    background-color: brown;
 }
 
-.texto{
-    font-size: 80px;
-    color: green;
+.title{
+    background-color: red;
+    font-size: 30px;
+}
+
+#principal{
+    font-size: 70px;
+}
+
+#titulo{
+    border: 2px solid black;
+    width: 65vw;
+    margin: auto;
+    padding: 3em;
+}
+
+.cards{
+    border: 2px solid black;
+    width: fit-content;
+    padding: 0px 1em 3em 1em;
+    border-radius: 10%;
+    transition: 1s;
+}
+
+.cards:hover{
+    background-color: rgb(46, 143, 146);
 }
