@@ -1,0 +1,114 @@
+/* Reset CSS más completo */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; /* Establece base de 16px para las rem units */
+  -webkit-text-size-adjust: 100%; /* Previene ajuste de texto en dispositivos móviles */
+  scroll-behavior: smooth; /* Desplazamiento suave */
+  line-height: 1.5; /* Mejora la legibilidad */
+}
+
+body {
+  min-height: 100vh; /* Asegura que el cuerpo llene la pantalla */
+  text-rendering: optimizeSpeed; /* Optimización de renderizado de texto */
+  font-family: sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto; /* Asegura que las imágenes escalen correctamente */
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit; /* Hereda la tipografía del body */
+}
+
+a {
+  text-decoration: none; /* Elimina subrayado */
+  color: inherit; /* Usa el color de texto predeterminado */
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none; /* Elimina viñetas y numeración */
+}
+
+table {
+  border-collapse: collapse; /* Une los bordes de las celdas */
+  width: 100%;
+}
+
+td, th {
+  padding: 0.5em; /* Añade espacio interno a las celdas */
+}
+
+blockquote, q {
+  quotes: none; /* Elimina comillas automáticas */
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+  content: ''; /* Quita comillas visuales */
+}
+
+input, button, textarea, select {
+  border: 1px solid #ccc; /* Añade un borde básico */
+  padding: 0.5em; /* Espacio interno básico */
+  outline: none; /* Elimina borde de enfoque */
+}
+
+button {
+  cursor: pointer; /* Indica que es interactivo */
+}
+
+button:disabled {
+  cursor: not-allowed; /* Cambio visual para botones deshabilitados */
+}
+
+hr {
+  border: 0; /* Elimina el borde */
+  border-top: 1px solid #ccc; /* Añade un borde superior */
+  margin: 1rem 0; /* Espaciado vertical */
+}
+
+pre {
+  white-space: pre-wrap; /* Maneja correctamente saltos de línea en código */
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+  color: inherit;
+}
+
+textarea {
+  resize: vertical; /* Permite solo redimensionar verticalmente */
+}
+
+optgroup {
+  font-weight: bold; /* Resalta grupos en select */
+}
+
+abbr[title] {
+  text-decoration: underline dotted; /* Visualización de abreviaturas */
+}

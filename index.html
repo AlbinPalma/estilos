@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css" type="text/css">
+    <link rel="stylesheet" href="reset.css">
     <title>Mi primera Pagina con estilo</title>
 </head>
 <body>
@@ -18,17 +19,19 @@
             <p>si bien tengo conocimientos full stack, me gusta mucho mas desarrollar aplicaciones Backend</p>
         </article>
         <article>
-            <div class="cards">
-                <h4 class="title">HTML</h4>
-                <img src="html-5.png" alt="html-5">
-            </div>
-            <div class="cards">
-                <h4 class="title">CSS</h4>
-                <img src="css-3.png" alt="css-3">
-            </div>        
-            <div class="cards">
-                <h4 class="title">Javascript</h4>
-                <img src="js.png" alt="js">
+            <div id="cards-container">
+                <div class="cards">
+                    <h4 class="title">HTML</h4>
+                    <img src="html-5.png" alt="html-5" class="logo">
+                </div>
+                <div class="cards">
+                    <h4 class="title">CSS</h4>
+                    <img src="css-3.png" alt="css-3" class="logo">
+                </div>        
+                <div class="cards">
+                    <h4 class="title">Javascript</h4>
+                    <img src="js.png" alt="js" class="logo">
+                </div>
             </div>
         </article>  
     </main>
